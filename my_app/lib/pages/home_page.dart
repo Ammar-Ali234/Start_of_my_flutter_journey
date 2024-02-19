@@ -5,13 +5,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int de = 30;
     return Scaffold(
       appBar: AppBar(
         title: Text("My first app"),
       ),
       body: Center(
           child: Container(
-        child: Text("hello!"),
+        child: Text("hello! $de  Ammar Ali"),
       )),
       drawer: Drawer(),
     );
