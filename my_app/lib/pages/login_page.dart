@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/utilities/routes.dart';
 
 class Login_page extends StatelessWidget {
   @override
@@ -11,10 +12,10 @@ class Login_page extends StatelessWidget {
               "assets/images/img.png",
               fit: BoxFit.cover,
             ),
-            SizedBox(
+            const SizedBox(
               height: 26.0,
             ),
-            Text(
+            const Text(
               "Welcome to the Login page",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
             ),
@@ -24,24 +25,24 @@ class Login_page extends StatelessWidget {
               child: Column(
                 children: [
                   TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: "Username",
                       labelText: "Enter username",
                     ),
                   ),
                   TextFormField(
                     obscureText: true, //obscuretext text ko dikhney se rokey ga
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "Password", labelText: "Enter password"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 26.0,
                   ),
                   ElevatedButton(
                     child: Text("Log in"),
                     style: TextButton.styleFrom(),
                     onPressed: () {
-                      print("Log in Successful");
+                      Navigator.pushNamed(context, Mereroute.homeroute);
                     },
                   )
                 ],

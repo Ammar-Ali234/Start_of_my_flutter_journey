@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:my_app/pages/home_page.dart';
 import 'package:my_app/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_app/pages/signup_page.dart';
+import 'package:my_app/utilities/routes.dart';
 
 void main() {
-  runApp(Myapp());
+  runApp(const Myapp());
 }
 
 class Myapp extends StatelessWidget {
@@ -21,8 +23,9 @@ class Myapp extends StatelessWidget {
               .red), //primaryswatch automatically her color se hisaab se text etc ko correct kr deta h
       routes: {
         "/": (context) =>
-            Login_page(), //default me ye "/" leta hai agar ye de dia hai to uper home k widget ki zaroort nahi hai
-        '/Login_page': (context) => HomePage()
+            Signup(), //default me ye "/" leta hai agar ye de dia hai to uper home k widget ki zaroort nahi hai
+        Mereroute.homeroute: (context) => const HomePage(),
+        Mereroute.loginroute: (context) => Login_page()
       },
     );
   }
