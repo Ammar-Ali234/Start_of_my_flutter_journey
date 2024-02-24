@@ -23,7 +23,7 @@ class Myapp extends StatelessWidget {
               .red), //primaryswatch automatically her color se hisaab se text etc ko correct kr deta h
       routes: {
         "/": (context) =>
-            Signup(), //default me ye "/" leta hai agar ye de dia hai to uper home k widget ki zaroort nahi hai
+            Login_page(), //default me ye "/" leta hai agar ye de dia hai to uper home k widget ki zaroort nahi hai
         Mereroute.homeroute: (context) => const HomePage(),
         Mereroute.loginroute: (context) => Login_page()
       },
