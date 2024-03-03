@@ -25,7 +25,8 @@ class Myapp extends StatelessWidget {
         "/": (context) =>
             Login_page(), //default me ye "/" leta hai agar ye de dia hai to uper home k widget ki zaroort nahi hai
         Mereroute.homeroute: (context) => const HomePage(),
-        Mereroute.loginroute: (context) => Login_page()
+        Mereroute.loginroute: (context) => Login_page(),
+        Mereroute.signuproute: (context) => Signup()
       },
     );
   }
